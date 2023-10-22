@@ -187,3 +187,6 @@ for (let i = 1; i <= 3; i++) {
     console.log(`Outfit ${i} - Thom will be wearing: ${thomsOutfit.shirt}, ${thomsOutfit.pants}, and ${thomsOutfit.accessory}.`);
     console.log("------");
   }
+  for (const item of kristynsCloset) {
+    console.log(`WHIRR: Now washing ${item}`);
+  }
