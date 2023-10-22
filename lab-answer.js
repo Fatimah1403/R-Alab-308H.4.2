@@ -107,3 +107,14 @@ log(whereIsWaldo);
 whereIsWaldo[1][2]="No one";
 console.log(whereIsWaldo)
 console.log(whereIsWaldo[2][1][1]);
+
+//----------Excited Kitten----------------------
+// Write code that logs "Love me, pet me! HSSSSSS!" 20 times
+let message = ["...human... why you taking pictures of me...?",
+"...the catnip made me do it...", "...why does the red dot always get away...?"]
+for (let w = 0; w < 20; w++) {
+    log("Love me, pet me! HSSSSSS!");
+    const randomIndex = Math.floor(Math.random()) * message.length;
+    const randomElement = message[randomIndex];
+    log(randomElement);
+}
