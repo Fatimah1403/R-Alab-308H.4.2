@@ -43,3 +43,10 @@ log(dart)
 wolfy.shift();
 wolfy.unshift("Gameboy");
 log(wolfy);
+
+//---------Yell at the Ninja Turtles------------------------
+const ninjaTut = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+for (const turtle of ninjaTut) {
+    const upperCase = turtle.toUpperCase(ninjaTut);
+    log(upperCase);
+}
