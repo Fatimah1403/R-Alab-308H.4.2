@@ -130,3 +130,41 @@ if (nums.length % 2 === 0) {
 }
 log("The median number is:", medianNum);
 
+//-----------Hungry for More?-----------------------
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+  let kristynsShoe = kristynsCloset.shift();
+
+  // Access Thom's accessories array and push Kristyn's shoe into it
+thomsCloset[2].push(kristynsShoe);
+
+console.log("Kristyn's Closet:", kristynsCloset);
+console.log("Thom's Closet:", thomsCloset);
