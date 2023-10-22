@@ -190,3 +190,6 @@ for (let i = 1; i <= 3; i++) {
   for (const item of kristynsCloset) {
     console.log(`WHIRR: Now washing ${item}`);
   }
+console.log("Thom's shirts:", thomsCloset[0]);
+console.log("Thom's pants:", thomsCloset[1]);
+console.log("Thom's accessories:", thomsCloset[2]);
