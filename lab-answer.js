@@ -50,3 +50,46 @@ for (const turtle of ninjaTut) {
     const upperCase = turtle.toUpperCase(ninjaTut);
     log(upperCase);
 }
+
+// ----------Yell at the Ninja Turtles answered-------------
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+log(favMovies[8]);
+const sortMovies = favMovies.sort();
+log(sortMovies);
+//pop method
+const lastMovies = favMovies.pop();
+log("Last Movie", lastMovies);
+log("Updated Movie", favMovies);
+
+// push method
+const addMovies = favMovies.push("Guardians of the Galaxy");
+log("Updated Movie", favMovies);
+
+favMovies.reverse();
+log("Reversed Movie", favMovies);
+
+favMovies.shift();
+log("Shift method", favMovies);
+
+favMovies.unshift();
+log("Unshift method", favMovies);
+
+const DjangoUnchained = favMovies.indexOf("Django Unchained");
+if (DjangoUnchained !== -1) {
+    favMovies.splice(DjangoUnchained, 1, "Avatar");
+    log("Updated movie list", favMovies);
+} else {
+    log("The movie not found in the list");
+}
+// slice the half of the array.
+const midFavMovies = Math.ceil(favMovies.length / 2);
+const lasthalf = favMovies.slice(midFavMovies);
+log(lasthalf);
+// console index of "fast and furious"
+favMovies.pop();
+const indexOfFastFurious = favMovies.indexOf("Fast and Furious");
+if (indexOfFastFurious !== -1) {
+    log('Index of "Fast and Furious":', indexOfFastFurious)
+} else {
+    log('"Fast and Furious" is not in the array');
+}
