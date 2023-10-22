@@ -168,3 +168,22 @@ thomsCloset[2].push(kristynsShoe);
 
 console.log("Kristyn's Closet:", kristynsCloset);
 console.log("Thom's Closet:", thomsCloset);
+
+// Create three outfits for Kristyn and Thom
+for (let i = 1; i <= 3; i++) {
+    const kristynsOutfit = {
+      shirt: getRandomItem(kristynsCloset),
+      pants: getRandomItem(kristynsCloset),
+      accessory: getRandomItem(kristynsCloset)
+    };
+  
+    const thomsOutfit = {
+      shirt: getRandomItem(thomsCloset[0]),
+      pants: getRandomItem(thomsCloset[1]),
+      accessory: getRandomItem(thomsCloset[2])
+    };
+  
+    console.log(`Outfit ${i} - Kristyn will be wearing: ${kristynsOutfit.shirt}, ${kristynsOutfit.pants}, and ${kristynsOutfit.accessory}.`);
+    console.log(`Outfit ${i} - Thom will be wearing: ${thomsOutfit.shirt}, ${thomsOutfit.pants}, and ${thomsOutfit.accessory}.`);
+    console.log("------");
+  }
