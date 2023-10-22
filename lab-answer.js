@@ -93,3 +93,17 @@ if (indexOfFastFurious !== -1) {
 } else {
     log('"Fast and Furious" is not in the array');
 }
+
+//------------Where is Waldo------------------
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                      ["Lucinda", "Jacc", "Neff", "Snoop"],
+                      ["Petunia", ["Baked Goods", "Waldo"]]];
+
+const index = whereIsWaldo.indexOf("Eggbert");
+if (index !== -1) {
+    whereIsWaldo.splice(index, 1);
+}
+log(whereIsWaldo);
+whereIsWaldo[1][2]="No one";
+console.log(whereIsWaldo)
+console.log(whereIsWaldo[2][1][1]);
